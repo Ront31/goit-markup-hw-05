@@ -98,6 +98,22 @@ button {
   color: var(--hover-text-color);
 }
 
+.current-thumb {
+  position: relative;
+}
+
+.nav-list-link.current::after {
+  content: '';
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  bottom: -33px;
+  left: 0;
+
+  background: var(--hover-text-color);
+  border-radius: 2px;
+}
+
 .nav-list-link,
 .header-contacts-link {
   padding-top: 32px;
@@ -259,6 +275,27 @@ button {
 
 .function {
   padding-top: 0;
+}
+
+.function-thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.function-img-text {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-top: 27px;
+  padding-bottom: 27px;
+
+  font-weight: 700;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--universal-color);
+  background-color: rgba(47, 48, 58, 0.8);
 }
 
 .team {
@@ -528,6 +565,25 @@ button {
 .img-link {
   display: block;
   color: inherit;
+}
+
+.portfolio-thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-text {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+
+  font-size: 18px;
+  line-height: 1.56;
+
+  color: var(--universal-color);
+  background-color: var(--hover-text-color);
 }
 
 .img-link:hover,
