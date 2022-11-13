@@ -289,8 +289,10 @@ button {
   position: absolute;
   bottom: 0;
   width: 100%;
-  padding-top: 27px;
-  padding-bottom: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
 
   font-weight: 700;
   line-height: 1.14;
@@ -365,7 +367,7 @@ button {
   border-radius: 50%;
   color: var(--team-social-links-color);
 
-  transition: color var(--anim) background-color var(--anim);
+  transition: color var(--anim), background-color var(--anim);
 }
 
 .social-links-link:hover,
@@ -652,7 +654,7 @@ button {
 
   background-color: rgba(0, 0, 0, 0.2);
 
-  transition: opacity 250ms linear, visibility 250ms linear;
+  transition: opacity var(--anim), visibility var(--anim);
 }
 
 .backdrop.is-hidden {
