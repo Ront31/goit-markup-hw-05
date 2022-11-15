@@ -437,7 +437,8 @@ button {
   gap: 70px;
 }
 
-.join-text {
+.join-text,
+.join-label {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
@@ -525,6 +526,28 @@ button {
 .address-list-link:focus,
 .address-list-link-text:focus {
   color: var(--hover-text-color);
+}
+
+.join-form {
+  display: flex;
+  align-items: baseline;
+  margin-left: 93px;
+  flex-direction: column;
+}
+
+.join-subform {
+  display: flex;
+}
+
+.join-button {
+  background-color: var(--hover-text-color);
+  padding: 10px 28px;
+  display: flex;
+  align-items: center;
+}
+
+.join-icon {
+  margin-left: 10px;
 }
 
 /* portfolio section */
