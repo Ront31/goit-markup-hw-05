@@ -546,6 +546,7 @@ button {
   padding-left: 16px;
   background-color: var(--hero-background-color);
   width: 358px;
+  color: var(--universal-color);
 }
 
 .join-input::placeholder {
